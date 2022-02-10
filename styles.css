@@ -136,7 +136,7 @@
     transition: all 0.3s ease;
   }
   
-  @media screen and (max-width: 1010px) {
+  @media screen and (max-width: 1040px) {
     .navbar__container {
       display: flex;
       justify-content: space-between;
@@ -243,4 +243,6 @@
 
 .Elma__Pigger {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
 }
