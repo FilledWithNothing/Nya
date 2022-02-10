@@ -16,8 +16,14 @@
 }
 
   .navbar__logo {
-      font-family: ProximaNovaCond;
+      font-family: 'ProximaNovaCond';
   }
+
+  img[src*="Sob.png"] {
+    position: relative;
+    top: 4px
+}
+
   .navbar {
     background: #131313;
     height: 80px;
@@ -52,10 +58,12 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
+    position: absolute;
+    left: 50px;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: Proxima Nova Cn Bl;
   }
   
@@ -68,12 +76,14 @@
     align-items: center;
     list-style: none;
     text-align: center;
+    right: 50px;
+    position: absolute;
   }
   
   .navbar__item {
     height: 80px;
   }
-  
+
   .navbar__links {
     color: #fff;
     display: flex;
@@ -89,7 +99,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    width: 100%;
+    width: 235px;
   }
   
   .button {
@@ -114,11 +124,19 @@
   }
   
   .navbar__links:hover {
-    color: #f77062;
+    background: linear-gradient(to bottom, #fecb7e 0%, #f68686 100%);
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-box-decoration-break: clone;
+    -moz-text-fill-color: transparent;
+    box-decoration-break: clone;
+    text-shadow: none;
     transition: all 0.3s ease;
   }
   
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1010px) {
     .navbar__container {
       display: flex;
       justify-content: space-between;
@@ -140,6 +158,7 @@
       transition: all 0.5s ease;
       height: 50vh;
       z-index: -1;
+      right: 0px;
     }
   
     .navbar__menu.active {
@@ -148,12 +167,14 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 50vh;
+      height: 600%;
       font-size: 1.6rem;
     }
   
     #navbar__logo {
-      padding-left: 25px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
     }
   
     .navbar__toggle .bar {
@@ -166,6 +187,8 @@
   
     .navbar__item {
       width: 100%;
+      position: sticky;
+      right: 100px;
     }
   
     .navbar__links {
@@ -177,13 +200,16 @@
   
     .navbar__btn {
       padding-bottom: 2rem;
+      width: 100%;
+      position: sticky;
+      right: 100px;
     }
   
     .button {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 400px;
       height: 80px;
       margin: 0;
     }
