@@ -32,6 +32,7 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+    left: 0px;
     top: 0;
     z-index: 999;
     font-family: 'Arial',Proxima Nova Cn Bl;
@@ -242,7 +243,5 @@
   /* Elma Pig */
 
 .Elma__Pigger {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,0);
+  width: 100%;
 }
