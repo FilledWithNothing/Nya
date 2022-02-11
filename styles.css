@@ -170,6 +170,7 @@
       z-index: 99;
       height: 600%;
       font-size: 1.6rem;
+      width: 100%;
     }
   
     #navbar__logo {
