@@ -23,8 +23,8 @@
 
   @font-face {
     font-family: 'Proxima Nova Cn Bl';
-    src: url('Fonts/ProximaNovaCond-Black.woff2') format('woff2');
-    src: url('Font/sProximaNovaCond-Black.woff') format('woff'),
+    src: url('Fonts/ProximaNovaCond-Black.woff2') format('woff2'),
+        url('Font/sProximaNovaCond-Black.woff') format('woff'),
         url('Font/ProximaNovaCond-Black.ttf') format('truetype'),
         url('Fonts/ProximaNovaCond-Black.svg#ProximaNovaCond-Black') format('svg');
     font-weight: 900;
