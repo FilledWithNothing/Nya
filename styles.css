@@ -241,8 +241,25 @@
     }
   }
 
+  /* iCunny */
+.label {
+  Display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #fecb7e 0%, #f68686 100%);
+  color: #fff;
+}
   /* Elma Pig */
 
 .Elma__Pigger {
   width: 100%;
 }
+
+  /* Pigger */
